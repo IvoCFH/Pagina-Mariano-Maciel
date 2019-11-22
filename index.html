@@ -121,3 +121,270 @@
 		</div>
 	</body> <!--Finalizacion del cuerpo de la página-->
 </html> <!--Finalización del código de la página-->
+
+
+
+<!DOCTYPE HTML>
+<!-- Esta es la mnueva versión de la página inicio: Inicio v2.1. Se le agrega el código en CSS para que sea Responsive-->
+<html> 
+    <head> 
+        <title>Jardinería & Piletería Mariano Maciel</title>
+        <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		
+		<style>
+			body {
+				background-color: rgb(227, 238, 182);
+				margin: 0px;
+			}
+			#imagen_banner {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 169px;
+				border: 1px solid rgb(156,100,12);
+			}
+			.texto {
+				position: relative;
+				width: max-content;
+				margin: 0 auto;
+				text-align: center;
+				font-family: "Calibri", sans-serif;
+			}
+			.jard {
+				color: green;
+				padding: 0 10px;
+				font-size: 40px;
+			}
+			.poema {
+				padding: 5px 0 0;
+			}
+			a {
+				text-decoration: none;
+				color: white;
+			}
+			#contenido-imagenes a img:hover {
+				border: 2px solid rgb(38, 127, 0);
+				width: 90%;
+			}
+			table {
+				position: relative;
+				margin: 6px auto 0;
+				width: 100%;
+				font-family: "Calibri", sans-serif;
+			}
+			th {
+				border: 1px solid white;
+				background: rgb(33, 97, 140);
+				color: white;
+				width: 20%;
+				padding: 5px 0;
+			}
+			#contenido-texto {
+				position: relative;
+				float: left;
+				width: 45%;
+				margin: 15px 1rem 0 0;
+				padding: 15px 15px 0 30px;
+			}
+			#prepara-pileta {
+				width: 100%;
+				text-align: center;
+				margin-top: 2rem;
+				margin-bottom:0;
+			}
+			ul, #contenido-texto h2, #prepara-pileta h2, h3, p {
+				font-family: "system-ui", sans-serif;
+				font-weight: 500;
+				color: black;
+				margin: 10px;
+				list-style-type: square;
+			}
+			#imagen-deco {
+				margin: 0;
+				height: 500px;
+				position: absolute;
+				top: 171px;
+			}
+			#contenido-imagenes {
+				position: relative;
+				margin: 33px 2rem 0 0;
+				float: right;
+				height: max-content;
+				width: 40%;
+				height: 450px;
+				text-align: center;
+				border: 3px solid rgb(38, 127, 0);
+				border-radius: 10px;
+				overflow: auto;
+			}
+			#contenido-imagenes::-webkit-scrollbar {
+				border-radius: 5px;
+				width: 10px;
+				background-color: rgb(246, 255, 212);
+			}
+			#contenido-imagenes::-webkit-scrollbar-thumb {
+				background-color: #aaa;
+				border-radius: 5px;
+			}
+			#img_vertical {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 143%;
+			}
+			.img {
+				position: relative;
+				margin: 15px 0;
+				
+				border-radius: 10px;
+			}
+			.seccion-imagenes {
+				height: 10%;
+				width: 100%;
+				position: relative;
+				margin: 0;
+				padding: 0;
+			}
+			#banner-imagen {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height:  100%;
+			}
+			.seccion-imagenes h3 {
+				position: relative;
+				margin: 0;
+				padding-top: 0.5em;
+			}
+			.contenedor {
+				overflow: hidden;
+				margin-left: 18rem;
+				margin-bottom:0;
+			}
+			
+			@media screen and (max-width: 1000px) {
+				#imagen-deco {
+					display: none;
+				}
+				.contenedor{
+					margin: 0.5em auto;
+					max-width: 800px;
+					width: 100%;
+					overflow: hidden;
+				}
+				#contenido-texto {
+					float: left;
+					width: 50%;
+					padding: 0;
+				}
+				#contenido-imagenes {
+					width: 45%;
+					float: right;
+					margin-right: 0;
+					margin-top: 0;
+				}
+			}
+			
+			@media screen and (max-width: 650px) {
+				.texto {
+					width: 100%
+				}
+				.jard {
+					padding: 0;
+					font-size: 36px;
+				}
+				#imagen_banner {
+					height: 160px;
+				}
+				#imagen-deco {
+					display: none;
+				}	
+				.contenedor{
+					margin: 0 auto;
+					max-width: 800px;
+					width: 100%;
+				}
+				#contenido-texto {
+					width: 100%;
+					padding: 0;
+				}
+				#contenido-imagenes {
+					width: 90%;
+					margin: 2em 1em;
+					border: none;
+					border-radius: 0;
+					overflow: hidden;
+					height: max-content;
+				}
+				#img_vertical {
+					display: none;
+				}
+				.img {
+					border: 1px solid grey;
+				}
+				
+			}
+			
+        </style>
+    </head>
+    <body>
+		<img src="https://www.majofesa.com/wp-content/uploads/2016/05/sicomoro-700x330.jpg" alt="Imagen Banner" ID="imagen_banner">
+		<div><!--DIV DE TÍTULO-->
+			<h1 class="texto jard">Jardinería y Piletería<br>Mariano Maciel</h1>
+			<h2 class="texto poema">Poema de Mariano</h2>
+		</div>
+		<table><!--TABLA DE SELECCION-->
+			<thead>
+				<tr>
+					<th><a href="https://ivocfh.github.io/Pagina-Mariano-Maciel/index.html">Inicio</a></th>
+					<!--<th><a href="D:\02 - Personales\HTML5 & CSS\Mariano Maciel - Jardinería y Piletería\Página Final\Servicios.html">Servicios</a></th>-->
+					<!--<th><a href="D:\02 - Personales\HTML5 & CSS\Mariano Maciel - Jardinería y Piletería\Página Final\Cotizaciones.html">Cotizaciones</a></th>-->
+					<th><a href="https://ivocfh.github.io/Pagina-Mariano-Maciel/Contacto.html">Contacto</a></th>
+				</tr>
+			</thead>
+		</table>
+		<img src="https://ivocfh.github.io/Pagina-Mariano-Maciel/JM (3).png" alt="imagen-deco" ID="imagen-deco">
+		<div class="contenedor">
+			<div ID="contenido-texto"><!--DIV DE CONTENIDO CON TEXTO Y LISTAS-->
+				<img src="https://ivocfh.github.io/Pagina-Mariano-Maciel/TITULOS 1.png" alt="titulo 1" width="100%">
+				<ul>
+					<li>Trabajo profesional</li>
+					<li>Sumo cuidado del espacio de trabajo</li>
+					<li>Más de 25 años de experiencia en el rubro</li>
+					<li>Atención totalmente personalizada</li>
+					<li>Productos de confianza</li>
+				</ul><br>
+				<img src="https://ivocfh.github.io/Pagina-Mariano-Maciel/TITULOS 2.png" alt="titulo 2" width="100%">
+				<ul>
+					<li>Productos utilizados para pileta</li>
+					<li>Viveros</li>
+				</ul>
+				<div ID="prepara-pileta" class=""><!--DIV DE PREPARÁ TU PILETA-->
+					<img src="https://ivocfh.github.io/Pagina-Mariano-Maciel/TITULOS 3.png" alt="titulo pileta" width="100%">
+					<p>Ingresá a nuestra sección de cotizaciones<br>y pedí tu presupuesto</p>
+				</div>
+			</div>
+			<div ID="contenido-imagenes"><!--DIV DE CONTENIDO CON IMÁGENES-->
+				<img src="https://ivocfh.github.io/Pagina-Mariano-Maciel/background de imágenes.png" ID="img_vertical">
+				<div class="seccion-imagenes"><!--DIV DENTRO DE CONTENIDO CON IMÁGENES BANNER -->
+					<img src="https://ivocfh.github.io/Pagina-Mariano-Maciel/Boton tabla.jpg" alt="banner de sección imagenes" ID="banner-imagen">
+					<h3>IMÁGENES JARDINERÍA</h3>
+				</div>
+				<a href="https://ivocfh.github.io/Pagina-Mariano-Maciel/Imágenes Jardinería.html">
+					<img src="https://ivocfh.github.io/Pagina-Mariano-Maciel/Imagen Jardinería.jpg" alt="link a imagenes jardinería" class="img" width="80%">
+				</a>
+				<div class="seccion-imagenes"><!--DIV DENTRO DE CONTENIDO CON IMÁGENES BANNER -->
+					<img src="https://ivocfh.github.io/Pagina-Mariano-Maciel/Boton tabla.jpg" alt="banner de sección imagenes" ID="banner-imagen">
+					<h3>IMÁGENES PILETERÍA</h3>
+				</div>
+				<a href="https://ivocfh.github.io/Pagina-Mariano-Maciel/Imágenes Piletería.html">
+					<img src="https://ivocfh.github.io/Pagina-Mariano-Maciel/Imagen Piletería.jpg" alt="link a imagenes piletería" class="img" width="80%">
+				</a>
+			</div>
+		</div>
+	</body> 
+</html>
