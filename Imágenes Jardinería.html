@@ -60,18 +60,34 @@
 				font-weight: bold;
 				
 			}
-			#retorno_imagenes {
-				color: rgb(213, 216, 220);
-				font-style: italic;
+			#bloque_imagenes {
+				width: 96%;
+				margin: 1em auto 0;
+				padding: 0;
+				text-align: center;
 			}
 			.imagenes {
-				margin-top: 10px;
-				margin-left: 10px;
-				width: 500px;
+				margin: 0.5em;
+				width: 48%;
+				border: 1px solid white;
 			}
-			#bloque_imagenes {
-				width: max-content;
-				margin: 0 auto;
+			@media screen and (max-width: 650px) {
+				.texto {
+					width: 100%
+				}
+				.jard {
+					padding: 0;
+					font-size: 36px;
+				}
+				#imagen_banner {
+					height: 160px;
+				}
+				.imagenes {
+					width: 100%;
+					height: auto;
+					margin: 0 0 1em;
+					padding: 0;
+				}
 			}
 		</style>
     </head>
@@ -85,14 +101,13 @@
 			<thead>
 				<tr>
 					<th class="contornos_tabla"><a href="https://ivocfh.github.io/Pagina-Mariano-Maciel/index.html">Inicio</a></th>
-					<th class="contornos_tabla"><a href="https://ivocfh.github.io/Pagina-Mariano-Maciel/Imágenes.html">Imágenes</a></th>
 					<!--<th class="contornos_tabla"><a href="D:\02 - Personales\HTML5 & CSS\Mariano Maciel - Jardinería y Piletería\Página Final\Servicios.html">Servicios</a></th>-->
 					<!--<th class="contornos_tabla"><a href="D:\02 - Personales\HTML5 & CSS\Mariano Maciel - Jardinería y Piletería\Página Final\Cotizaciones.html">Cotizaciones</a></th>-->
 					<th class="contornos_tabla"><a href="https://ivocfh.github.io/Pagina-Mariano-Maciel/Contacto.html">Contacto</a></th>
 				</tr>
 			</thead>
 		</table>
-		<p><a href="https://ivocfh.github.io/Pagina-Mariano-Maciel/Imágenes.html" ID="retorno_imagenes">Imágenes</a> > Jardinería</p>
+		<p>Imágenes Jardinería</p>
 		<div ID="bloque_imagenes">
 			<img src="https://ivocfh.github.io/Pagina-Mariano-Maciel/JM (1).jpg" class="imagenes">
 			<img src="https://ivocfh.github.io/Pagina-Mariano-Maciel/JM (2).jpg" class="imagenes"><br>
