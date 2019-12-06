@@ -3,10 +3,19 @@
     <head>
         <title>Imágenes Piletería</title>
         <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 		<style>
 			body {
 				margin: 0px;
 				background: rgb(27, 79, 114);
+			}
+			#imagen_banner {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 169px;
+				border: 1px solid rgb(156,100,12);
 			}
 			.texto {
 				position: relative;
@@ -15,41 +24,30 @@
 				text-align: center;
 				font-family: "Calibri", sans-serif;
 			}
-			#jard {
+			.jard {
 				color: green;
 				padding: 0 10px;
-				margin: 0;
 				font-size: 40px;
 			}
-			#poema {
-				margin: 0;
+			.poema {
 				padding: 5px 0 0;
-			}
-			#imagen_banner {
-				position: absolute;
-				width: 100%;
-				height: 169px;
-				top: 0;
-				left: 0;
-				border: 1px solid rgb(156,100,12);
-			}
-			#tabla{
-				position: relative;
-				margin: 5px auto 0;
-				width: 100%;
-				font-family: "Calibri", sans-serif;
-			}
-			.contornos_tabla {
-				border: 1px solid white;
-				top: 0;
-				background: rgb(33, 97, 140);
-				color: white;
-				width: 20%;
-				padding: 5px 0;
 			}
 			a {
 				text-decoration: none;
 				color: white;
+			}
+			table {
+				position: relative;
+				margin: 6px auto 0;
+				width: 100%;
+				font-family: "Calibri", sans-serif;
+			}
+			th {
+				border: 1px solid white;
+				background: rgb(33, 97, 140);
+				color: white;
+				width: 20%;
+				padding: 5px 0;
 			}
 			p {
 				width: max-content;
@@ -60,48 +58,60 @@
 				font-weight: bold;
 				
 			}
-			#retorno_imagenes {
-				color: rgb(213, 216, 220);
-				font-style: italic;
+			#bloque_imagenes {
+				width: 96%;
+				margin: 1em auto 0;
+				padding: 0;
+				text-align: center;
 			}
 			.imagenes {
-				margin-top: 10px;
-				margin-left: 10px;
-				width: 500px;
+				margin: 0.5em;
+				width: 48%;
+				border: 1px solid white;
 			}
-			#bloque_imagenes {
-				width: max-content;
-				margin: 0 auto;
-			}
-			#ultima {
-				margin-left: 260px;
+			@media screen and (max-width: 650px) {
+				.texto {
+					width: 100%
+				}
+				.jard {
+					padding: 0;
+					font-size: 36px;
+				}
+				#imagen_banner {
+					height: 160px;
+				}
+				.imagenes {
+					width: 100%;
+					height: auto;
+					margin: 0 0 1em;
+					padding: 0;
+				}
 			}
 		</style>
     </head>
 	<body>
-		<img src="https://www.majofesa.com/wp-content/uploads/2016/05/sicomoro-700x330.jpg" ID="imagen_banner">
-		<div class="texto" >
-			<h1 ID="jard">Jardinería y Piletería<br>Mariano Maciel</h1>
-			<h2 ID="poema">Poema de Mariano</h2>
+		<img src="https://www.majofesa.com/wp-content/uploads/2016/05/sicomoro-700x330.jpg" alt="Imagen Banner" ID="imagen_banner">
+		<div><!--DIV DE TÍTULO-->
+			<h1 class="texto jard">Jardinería y Piletería<br>Mariano Maciel</h1>
+			<h2 class="texto poema">Poema de Mariano</h2>
 		</div>
-		<table ID="tabla">
+		<table><!--TABLA DE SELECCION-->
 			<thead>
 				<tr>
-					<th class="contornos_tabla"><a href="https://ivocfh.github.io/Pagina-Mariano-Maciel/index.html">Inicio</a></th>
-					<th class="contornos_tabla"><a href="https://ivocfh.github.io/Pagina-Mariano-Maciel/Imágenes.html">Imágenes</a></th>
-					<!--<th class="contornos_tabla"><a href="D:\02 - Personales\HTML5 & CSS\Mariano Maciel - Jardinería y Piletería\Página Final\Servicios.html">Servicios</a></th>-->
-					<!--<th class="contornos_tabla"><a href="D:\02 - Personales\HTML5 & CSS\Mariano Maciel - Jardinería y Piletería\Página Final\Cotizaciones.html">Cotizaciones</a></th>-->
-					<th class="contornos_tabla"><a href="https://ivocfh.github.io/Pagina-Mariano-Maciel/Contacto.html">Contacto</a></th>
+					<th><a href="D:\02 - Personales\HTML5 & CSS\01 - Mariano Maciel - Jardinería y Piletería\Página Final\Inicio v2.1.html">Inicio</a></th>
+					<!--<th><a href="D:\02 - Personales\HTML5 & CSS\Mariano Maciel - Jardinería y Piletería\Página Final\Servicios.html">Servicios</a></th>-->
+					<!--<th><a href="D:\02 - Personales\HTML5 & CSS\Mariano Maciel - Jardinería y Piletería\Página Final\Cotizaciones.html">Cotizaciones</a></th>-->
+					<th><a href="D:\02 - Personales\HTML5 & CSS\01 - Mariano Maciel - Jardinería y Piletería\Página Final\Contacto v1.1.html">Contacto</a></th>
 				</tr>
 			</thead>
 		</table>
-		<p><a href="https://ivocfh.github.io/Pagina-Mariano-Maciel/Imágenes.html" ID="retorno_imagenes">Imágenes</a> > Piletería</p>
+		<p>Imágenes Piletería</p>
 		<div ID="bloque_imagenes">
 			<img src="https://ivocfh.github.io/Pagina-Mariano-Maciel/PM (1).jpg" class="imagenes">
 			<img src="https://ivocfh.github.io/Pagina-Mariano-Maciel/PM (4).jpg" class="imagenes"><br>
 			<img src="https://ivocfh.github.io/Pagina-Mariano-Maciel/PM (2).jpg" class="imagenes">
 			<img src="https://ivocfh.github.io/Pagina-Mariano-Maciel/PM (3).jpg" class="imagenes"><br>
-			<img src="https://ivocfh.github.io/Pagina-Mariano-Maciel/PM (5).jpg" class="imagenes" ID="ultima">
+			<img src="https://ivocfh.github.io/Pagina-Mariano-Maciel/PM (5).jpg" class="imagenes">
 		</div>
 	</body>
 </html>
