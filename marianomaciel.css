@@ -1,0 +1,120 @@
+body											
+	{
+		background-color: #1B5E20;		
+		margin: 0px 15% 0px 15%;
+		padding: 0px;
+		width: 70%;
+		height: 100%; 
+	}	/*Común para todas las páginas de Mariano*/
+
+.mainContainer
+	{
+		margin: 0px;
+		width: 100%;
+		padding-bottom: 40px;
+		height: 100%;
+		background-color: #9CCC65;
+	}	/*Común para todas las páginas de Mariano*/
+
+#imagen_banner
+	{
+		position: absolute;
+		padding: 0px;
+		margin: 0px;
+		top: 0px;
+		left: 15%;
+		width: 70%;						/*Debe utilizarse el mismo width que el body para que parezca que se encuentra dentro del mainContainer*/
+		height: 170px;
+	}	/*Común para todas las páginas de Mariano*/
+
+h1, h2
+	{
+		font-family: "Calibri", sans-serif;	
+		margin: 2%;
+	}	
+
+p	
+	{
+		font-family: "Calibri", sans-serif;	
+		margin: 2%;
+		font-size: 20px;
+	}
+
+.titulo
+	{
+		position: relative;
+	}
+
+.titulo h1
+	{
+		color: green;
+		text-align: center;
+		font-size: 40px;
+		font-family: "Calibri", sans-serif;
+		margin: 2px 0px;
+	}
+
+.titulo h2
+	{
+		text-align: center;
+		margin: 0px;
+		font-family: "Calibri", sans-serif;
+		font-style: italic;
+	}
+
+table 
+	{
+	position: relative;
+	margin: 6px auto 0;
+	width: 100%;
+	font-family: "Calibri", sans-serif;
+	}
+			
+th 
+	{
+	border: 1px solid white;
+	background: rgb(33, 97, 140);
+	color: white;
+	width: 20%;
+	padding: 5px 0;
+	}
+
+a
+	{
+	text-decoration: none;
+	color: white;
+	}
+
+.content
+	{
+		overflow: auto;					/*Esta parte hace que el contenedor content encierre toda la imagen imagenContacto que es puesta como float a la izquierda*/
+	}
+
+.content p
+	{
+		margin-top: 0px;
+		padding-top: 0px; 
+
+	}
+
+.content a
+	{
+		color: blue;
+	}
+
+.content a:hover
+	{
+		color: #5B2C6F;
+	}
+
+#imagenContacto
+	{	
+		float: left;
+		border: 1px solid green;
+		border-radius: 10px;
+		width: 50%;
+		margin: 0px 2%;
+	}
+
+
+

@@ -1,183 +1,37 @@
-<!DOCTYPE HTML>
+﻿<!DOCTYPE HTML>
 <!-- Esta es la mnueva versión de la página contacto: Contacto v1.1. Se le agrega el código en CSS para que sea Responsive-->
 <html> 
     <head> 
         <title>Contacto</title>
         <meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-		<style>
-			body {
-				background-color: rgb(227, 238, 182);
-				margin: 0px;
-			}
-			#imagen_banner {
-				position: absolute;
-				top: 0;
-				left: 0;
-				width: 99.7%;
-				height: 169px;
-				border: 1px solid rgb(156,100,12);
-			}
-			.texto {
-				position: relative;
-				width: max-content;
-				margin: 0 auto;
-				text-align: center;
-				font-family: "Calibri", sans-serif;
-			}
-			.jard {
-				color: green;
-				padding: 0;
-				font-size: 40px;
-				box-sizing: border-box;
-			}
-			.poema {
-				padding: 5px 0 0;
-			}
-			a {
-				text-decoration: none;
-				color: white;
-			}
-			
-			table {
-				position: relative;
-				margin: 6px auto 0;
-				width: 100%;
-				font-family: "Calibri", sans-serif;
-			}
-			th {
-				border: 1px solid white;
-				background: rgb(33, 97, 140);
-				color: white;
-				width: 20%;
-				padding: 5px 0;
-			}
-			#imagen-deco {
-				margin: 0;
-				height: 500px;
-				position: absolute;
-				top: 171px;
-			}
-			.contenedor {
-				margin-left: 20em;
-				margin-top: 2em;
-				overflow: hidden;
-				width: 70%;
-			}
-			#contenido-texto {
-				position: relative;
-				float: left;
-				width: 42%;
-				height: max-content;
-				margin-right: auto;
-				margin-left: 1em;
-				pading: 0;
-			}
-			ul, #contenido-texto h2, h3, p {
-				font-family: "system-ui", sans-serif;
-				font-size: 1.5em; 
-				font-weight: 500;
-				color: black;
-				margin: 10px;
-				list-style-type: square;
-			}
-			#contenido-texto p {
-				margin-left: 1em;
-				margin-bottom: 2em; 
-				padding: 0;
-			}
-			li {
-				margin-top: 1em;
-			}
-			#imagen-contacto {
-				margin-top: 1em;
-				margin-right: 1em;
-				border-radius: 100px;
-				border: 2px outset green;
-				width: 47%;
-				height: auto;
-				float: right;
-			}
-
-			@media screen and (max-width: 1000px) {
-				#imagen-deco {
-					display: none;
-				}
-				.contenedor{
-					margin: 1em auto;
-					width: 100%;
-					overflow: hidden;
-				}
-				#contenido-texto {
-					float: left;
-					width: max-content;
-					font-size: 0.8em;
-				}
-				#imagen-contacto {
-					width: 45%;
-					float: right;
-					margin-right: 1em;
-				}
-			}
-			
-			@media screen and (max-width: 700px) {
-				#imagen-deco {
-					display: none;
-				}
-				.contenedor{
-
-					margin: 1em auto;
-					width: 98%;
-					overflow: hidden;
-				}
-				#contenido-texto, li {
-					width: 100%;
-					font-size: 90%;
-				}
-				#imagen-contacto {
-					width: 90%;
-				}
-				.texto {
-					width: 100%
-				}
-				.jard {
-					padding: 0;
-					font-size: 36px;
-				}
-				#imagen_banner {
-					height: 160px;
-				}
-			}
-		</style>
+		<link rel="stylesheet" href="E:\Proyectos\Pagina-Mariano-Maciel-master\marianomaciel.css">
     </head>
-    <body>
-		<img src="https://www.majofesa.com/wp-content/uploads/2016/05/sicomoro-700x330.jpg" alt="Imagen Banner" ID="imagen_banner">
-		<div><!--DIV DE TÍTULO-->
-			<h1 class="texto jard">Jardinería y Piletería<br>Mariano Maciel</h1>
-			<h2 class="texto poema">Poema de Mariano</h2>
-		</div>
-		<table><!--TABLA DE SELECCION-->
-			<thead>
-				<tr>
-					<th><a href="https://ivocfh.github.io/Pagina-Mariano-Maciel/index.html">Inicio</a></th>
-					<!--<th><a href="D:\02 - Personales\HTML5 & CSS\Mariano Maciel - Jardinería y Piletería\Página Final\Servicios.html">Servicios</a></th>-->
-					<!--<th><a href="D:\02 - Personales\HTML5 & CSS\Mariano Maciel - Jardinería y Piletería\Página Final\Cotizaciones.html">Cotizaciones</a></th>-->
-					<th><a href="https://ivocfh.github.io/Pagina-Mariano-Maciel/Contacto.html">Contacto</a></th>
-				</tr>
-			</thead>
-		</table>
-		<img src="https://ivocfh.github.io/Pagina-Mariano-Maciel/JM (3).png" alt="imagen-deco" ID="imagen-deco">
-		<div class="contenedor">
-			<div ID="contenido-texto">
-				<h2>Contacto</h2>
-				<ul>
-					<li>Mariano Maciel</li>
-					<li>Celular:<br>11 4493 3689</li>
-					<li>Mail:<br>marianomaciel07@hotmail.com</li>
-				</ul>
-			</div>
-			<img src="https://ivocfh.github.io/Pagina-Mariano-Maciel/Imagen Contacto.jpg" alt="imagen de contacto" ID="imagen-contacto" width="425px">
-		</div>	
-	</body> 
-</html>
 
+
+    <body>
+		<div class="mainContainer">
+			<img src="https://www.majofesa.com/wp-content/uploads/2016/05/sicomoro-700x330.jpg" alt="Imagen Banner" ID="imagen_banner">
+			<div class="titulo">
+				<h1>Jardinería y Piletería<br>Mariano Maciel</h1>
+				<h2>Haciendo del Jardín, tu Hogar</h2>
+			</div>
+			<table><!--TABLA DE SELECCION-->
+				<thead>
+					<tr>
+						<th><a href="https://ivocfh.github.io/Pagina-Mariano-Maciel/index.html">Inicio</a></th>
+						<!--<th><a href="D:\02 - Personales\HTML5 & CSS\Mariano Maciel - Jardinería y Piletería\Página Final\Servicios.html">Servicios</a></th>-->
+						<!--<th><a href="D:\02 - Personales\HTML5 & CSS\Mariano Maciel - Jardinería y Piletería\Página Final\Cotizaciones.html">Cotizaciones</a></th>-->
+						<th><a href="https://ivocfh.github.io/Pagina-Mariano-Maciel/Contacto.html">Contacto</a></th>
+					</tr>
+				</thead>
+			</table>
+			<h2>Contacto</h2>
+			<div class="content">	
+				<img src="E:\Proyectos\Pagina-Mariano-Maciel-master\Imagen Contacto.jpg" alt="imagen_contacto" ID="imagenContacto"/>
+				<p>Mariano Maciel<br/><br/>Correo:<br/>
+				<a href="mailto:marianomaciel07@hotmail.com">marianomaciel07@hotmail.com</a><br/><br/>
+				Teléfono:<br/>11 4493 3689</p>
+			</div>
+		</div>
+	</body>
