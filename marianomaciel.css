@@ -1,5 +1,5 @@
-
 /*Común para todas las páginas de Mariano*/
+/*Tamaño base de letra 16px = 1em*/
 
 body {
 	background-color: #1B5E20;		
@@ -29,6 +29,7 @@ body {
 }	
 
 h1, h2 {
+	font-size: 24px;
 	font-family: "Calibri", sans-serif;	
 	margin: 2%;
 }	
@@ -36,7 +37,7 @@ h1, h2 {
 p {
 	font-family: "Calibri", sans-serif;	
 	margin: 2%;
-	font-size: 20px;
+	font-size: 16px;
 }	
 
 .titulo {
@@ -76,16 +77,15 @@ p {
 .tableBanner a {
 	text-decoration: none;
 	color: white;
+	font-size: 16px;
 }	
-
-
 
 /*Página Contacto.html*/
 
 .content {
 	overflow: auto;
 	/*Esta parte hace que el contenedor content encierre toda la imagen imagenContacto que es puesta como float a la izquierda*/
-}	
+}
 
 .content p {
 	margin-top: 0px;
@@ -133,10 +133,13 @@ p {
 .imgTitulo {
 	margin: 0px 0px;
 	width: 100%;
+	height: 30px;
 }
 
 #prepara-pileta p {
 	text-align: center;
+	font-family: "system-ui", sans-serif;
+	font-weight: 500;
 }
 
 #contenido-imagenes {
@@ -172,4 +175,36 @@ form {
 	font-weight: bold;
 	margin: 0px auto 0px 10px;
 	white-space: pre;
+}
+
+/* SECCION RESPONSIVE */
+
+@media screen and (max-width: 650px) {
+	.titulo h1 {
+		font-size: 24px;
+	}
+	h2 {
+		font-size: 16px;
+	}
+	#imagen_banner {
+		height: 122px;
+	}
+	#subContainer {
+		display: block;
+	}
+	#contenido-texto {
+		font-size: 12px;
+		width: 80%;
+		margin: 10px 10%;
+	}
+	.imgTitulo {
+		height: 20px;
+	}
+	#prepara-pileta .imgTitulo {
+		height: 40px;
+	}
+	#prepara-pileta p {
+		font-size: 12px;
+	}
+	
 }
